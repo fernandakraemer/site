@@ -1,7 +1,7 @@
 function enviardados(){
 
     if(document.dados.name.value=="" ||
-        document.dados.name.value.length < 8)
+        document.dados.name.value.length < 2)
     {
         alert( "Preencha campo NOME corretamente!" );
         document.dados.name.focus();
