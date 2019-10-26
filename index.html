@@ -188,12 +188,12 @@
 
 							<p>Entre em contato!</p>
 
-							<form action="https://formspree.io/mbjryjqz" method="POST">
+							<form action="https://formspree.io/mbjryjqz" method="POST" name="dados" onsubmit="return enviardados();">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Nome" /></div>
-									<div class="col-6 col-12-mobile"><input type="email" name="_replyto" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Nome" required maxlength="200"/></div>
+									<div class="col-6 col-12-mobile"><input type="email" name="_replyto" placeholder="Email" required maxlength="200"/></div>
 									<div class="col-12">
-										<textarea name="message" placeholder="Mensagem"></textarea>
+										<textarea name="message" placeholder="Mensagem" maxlength="300" required></textarea>
 									</div>
 									<div class="col-12">
 										<input type="submit" value="Enviar Mensagem" />
@@ -225,6 +225,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/formvalidator.js"></script>
 
 
 	</body>
