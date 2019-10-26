@@ -25,9 +25,9 @@ function enviardados(){
         return false;
     }
 
-    if (document.dados.tx_mensagem.value.length < 50 )
+    if (document.dados.message.value.length < 20 )
     {
-        alert( "É necessario preencher o campo MENSAGEM com mais de 50 caracteres!" );
+        alert( "É necessario preencher o campo MENSAGEM com mais de 20 caracteres!" );
         document.dados.message.focus();
         return false;
     }
